@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center_vertical"
+    tools:context=".Activity.SignIn_Activity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xin Chào"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_marginTop="10dp"
+        android:text="Đăng nhập để tiếp tục"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/edt_phone_number_email"
+        style="@style/editTextDrawableTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_intro"
+        android:layout_marginTop="60dp"
+        android:drawableLeft="@drawable/ic_person_outline_accent_24dp"
+        android:drawableTint="@color/colorAccent"
+        android:elevation="4dp"
+        android:hint="Email hoặc số điện thoại"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/edt_password"
+        style="@style/editTextDrawableTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_phone_number_email"
+        android:layout_marginTop="19dp"
+        android:drawableLeft="@drawable/ic_lock_outline_accent_24dp"
+        android:drawableTint="@color/colorAccent"
+        android:elevation="4dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:text="Quên mật khẩu?"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_forgot_password"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_bg"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>

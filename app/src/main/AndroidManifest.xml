@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nhanvienapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/background_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NhanVienApp">
+        <activity
+            android:name=".Activity.Category_Form_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Product_Form_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ChangePassword_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ForgotPassword_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Products_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.EmploymentInfo_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SignIn_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Main_Activity"
+            android:exported="true" />
+    </application>
+
+</manifest>

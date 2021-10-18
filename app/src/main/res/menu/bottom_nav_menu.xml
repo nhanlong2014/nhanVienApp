@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/loaiSanPham_Fragment"
+        android:title="Sản phẩm"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_storefront_24"/>
+    <item
+        android:id="@+id/taoHoaDon_Fragment"
+        android:title="Hóa đơn"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_receipt_long_24"/>
+    <item
+        android:id="@+id/lichSu_Fragment"
+        android:title="Lịch sử"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_ballot_24"/>
+
+</menu>
